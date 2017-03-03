@@ -2,11 +2,17 @@ angular
     .module('TodoApp', [])
     .controller("TodoController", TodoController)
 
-function TodoController($scope) {
-        $scope.todos = [
-            {title: 'milk', note: 'organic'},
-            {title: 'kids', note: 'school'}
-        ];
+function TodoController($scope, $http) {
+        $scope.todos = [];
+        
+        $http.get('/lectures/todo')
+             .success(function (response) {
+                 console.log(response);
+                 $scope.todos = response;
+             });
+        
+
+    
         $scope.createTodo = createTodo;
         $scope.deleteTodo = deleteTodo;
         $scope.selectTodo = selectTodo;

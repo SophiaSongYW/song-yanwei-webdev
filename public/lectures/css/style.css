@@ -1,0 +1,30 @@
+#secondParagraph{
+    color: red;
+    background-color: gray;
+}
+p{
+    background:green;
+}
+
+.yellowBg{
+    background-color:yellow;
+}
+
+#intro{
+    background-color:gray;
+}
+
+h1{
+    color: red;
+    background-color: blue;
+}
+
+
+h1{
+    color: white;
+    background-color: red;
+}
+
+
+
+

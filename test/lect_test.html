@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Intro to HTML</title>
+        <style>
+            h1 {
+                color:red;
+            }
+            h2#introhtml {
+                color:blue;
+                background:yellow;
+            }
+
+            .blueFg {
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="users.html">Users</a> </li>
+        </ul>
+
+        <section>
+        <header>
+            <h1>Introduction to HTML</h1>
+        </header>
+
+        <h1 class="blueFg">Course</h1>
+        <h2 id="introhtml">CS4550</h2>
+        <p>
+            HTML tags have an opening and a
+            closing tag. Tags are also
+            referred to as HTML elements.
+        </p>
+        </section>
+
+        <section>
+        <h3>Ordered Lists</h3>
+
+        <ol>
+            <li>Course 1</li>
+            <li>Course 2</li>
+            <li>Course 3</li>
+        </ol>
+
+        <h3>Ordered Lists</h3>
+        <ul>
+            <li>Java</li>
+            <li>C#</li>
+            <li class="blueFg">HTML</li>
+        </ul>
+        </section>
+
+        <section>
+        <h2>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Last Name</th>
+                        <th>First Name</th>
+                    </tr>
+                    <tr>
+                        <td>Wonderland</td>
+                        <td>Alice</td>
+                    </tr>
+                    <tr>
+                        <td>Marley</td>
+                        <td>Bob</td>
+                    </tr>
+                    <tr>
+                        <td>Garcia</td>
+                        <td>Charlie</td>
+                    </tr>
+                </thead>
+            </table>
+        </h2>
+        </section>
+
+        <section>
+        <h2>Table II</h2>
+        <table border="1">
+            <thead>
+            <tr>
+                <th>From Page</th>
+                <th>Event</th>
+                <th>To Page</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td rowspan="2">Login Page</td>
+                <td>Register</td>
+                <td>Register Page</td>
+            </tr>
+            <tr>
+                <td>Login</td>
+                <td rowspan="2">Profile Page</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Register Page</td>
+                <td>Register</td>
+            </tr>
+            <tr>
+                <td>Cancel</td>
+                <td>Login Page</td>
+            </tr>
+            </tbody>
+        </table>
+        </section>
+
+    <section>
+    <h2>Unorded List</h2>
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+        <li>Apple</li>
+    </ul>
+
+    <h2>Ordered List</h2>
+    <ol>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+        <li>Apple</li>
+    </ol>
+    </section>
+
+    <section>
+    <h2>Horizontal Lists</h2>
+        <ol class="jga-horizontal">
+        <li>Login</li>
+        <li>Register</li>
+        <li>Profile</li>
+        <li>Admin</li>
+    </ol>
+    </section>
+
+    <section>
+    <h1>Form Elements</h1>
+    <form method="post"
+          action="/path/to/form/service">
+        <label for="firstName">First Name</label>
+        <input name="firstName"
+               id="firstName"
+               type="text"
+               placeholder="Alice"
+               class="form-control"/>
+        <label for="lastName">Last Name</label>
+        <input name="lastName"
+               id="lastName"
+               type="text"
+               placeholder="Wonderland"
+               class="form-control"/>
+        <label for="email">Email</label>
+        <input name="email"
+               id="email"
+               type="email"
+               placeholder="alice@wonderland.com"
+               class="form-control"/>
+        <label for="dob">Date of Birth</label>
+        <input name="dob"
+               id="dob"
+               type="date"
+               class="form-control"/>
+        <br/>
+
+        <label>Preferred Control Method</label>
+        <select name="preferredcontactMethod"
+                class="form-control">
+            <option value="PHONE">Phone</option>
+            <option value="PIAZZA">Piazza</option>
+            <option value="EMAIL">Email</option>
+        </select>
+
+        <label>Favorite Color</label>
+        <br/>
+        <label>
+            <input name="favoriteColor"
+                   type="radio"
+                   value="yellow">
+            Yellow
+        </label><br/>
+        <label>
+            <input name="favoriteColor"
+                   type="radio"
+                   value="blue">
+            Blue
+        </label><br/>
+        <label>
+            <input name="favoriteColor"
+            type="radio"
+            value="red">
+            Red
+        </label><br/>
+
+        <label>Favorite Movie Generes</label><br/>
+        <label>
+            <input name="favoriteGenre"
+                   type="checkbox"
+                   value="horror">
+            Horror
+        </label><br/>
+        <label>
+            <input name="favoriteGenre"
+                   type="checkbox"
+                   value="comedy">
+            Comedy
+        </label><br/>
+        <label>
+            <input name="favoriteGenre"
+                   type="checkbox"
+                   value="scifi">
+            Science Fiction
+        </label><br/>
+
+        <button type="submit"
+                class="btn btn-block btn-primary">
+            Submit
+        </button>
+    </form>
+        <section>
+
+
+        <footer>
+        Copyright (c)
+    </footer>
+    </body>
+</html>
