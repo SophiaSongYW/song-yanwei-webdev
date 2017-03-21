@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Json</title>
+</head>
+<body>
+<h1>Json</h1>
+<script>
+    var alice = {
+        "firstName": "Alice",
+        "lastName": "Wonderland",
+        "salary": 123321
+    };
+    console.log(alice);
+
+    var department = {
+        name: "Computer Science",
+        director: {
+            lastName: "Bob",
+            lastName: "Marley"
+        },
+        dean: alice,
+        courses:[
+            {title: "CS5610"}, {title:"CS5200"}
+        ]
+    };
+    console.log(department);
+    var str = JSON.stringify(department);
+    console.log(str);
+    var depStr = '{"name":"Computer Science","director":{"lastName":"Marley"},"dean":{"firstName":"Alice","lastName":"Wonderland","salary":123321},"courses":[{"title":"CS5610"},{"title":"CS5200"}]}';
+
+    var depObj = JSON.parse(depStr);
+    console.log(depObj);
+</script>
+
+
+</body>
+</html>

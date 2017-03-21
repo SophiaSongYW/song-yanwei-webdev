@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script src="../js/jquery-3.1.1.min.js">
+</script>
+
+<script>
+    $(init);
+
+    function init() {
+        $("#p1").click(p1Clicked);
+        $("#ADD").click(addAandB);
+
+    }
+
+    function addAandB() {
+        var a = $("#A").val();
+        var b = $("#B").val();
+        a = parseInt(a);
+        b = parseInt(b);
+        var c = a + b;
+        $("#C").val(c);
+    }
+
+    function p1Clicked() {
+        $("body").append("<p>New Paragraph</p>");
+    }
+</script>
+<h1>Handing Events with jQuery</h1>
+
+<p id="p1">
+    JQuery allows binding events to functional behaviours very easily. First grab the DOM element and invoke any of the
+    jQuery event binding methods including
+</p>
+
+<input id="A"/>
+<input id="B"/>
+<button id="ADD">Add A and B</button>
+<input id="C"/>
+
+
+</body>
+</html>
